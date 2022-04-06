@@ -1,6 +1,6 @@
 # osu-tournament-stats
 
-An npm package that makes getting bracket and qualiifer stage stats for osu! standard tournaments much easier. Intended for use in websites made for these tournaments.
+An npm package that makes getting bracket and qualifier stage stats for osu! standard tournaments much easier. Intended for use in websites made for these tournaments.
 
 ### Features
 - Supports solo and team tournaments of any team size
