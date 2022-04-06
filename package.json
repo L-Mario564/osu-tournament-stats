@@ -1,0 +1,22 @@
+{
+  "name": "osu-tournament-stats",
+  "version": "1.0.0",
+  "description": "An npm package that makes getting bracket and qualiifer stage stats for osu! standard tournaments much easier",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": ["osu", "tournament", "stats"],
+  "author": "Mario564",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
