@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/L-Mario564/osu-tournament-stats.git"
   },
   "keywords": ["osu", "tournament", "stats"],
   "author": "Mario564",
