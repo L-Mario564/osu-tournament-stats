@@ -21,7 +21,7 @@ export default class SoloStats extends Stats {
 
   /**
    * Returns an object containg two arrays:
-   * - scores: An array of objects containing the beatmapID and an array of players scores for that map
+   * - scores: An array of objects containing the beatmap ID and an array of players scores for that map
    * - results: An array containing the qualifier results
    * @param calculationMethod Calculation method to apply to the results
    */
@@ -32,7 +32,7 @@ export default class SoloStats extends Stats {
   }
 
   /**
-   * Returns an array of objects containing the beatmap ID and an array of player scores that map
+   * Returns an array of objects containing the beatmap ID and an array of player scores for that map
    */
   public getBracketStats(): Scores[] {
     this.runChecks(this.players);

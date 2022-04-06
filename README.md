@@ -3,12 +3,12 @@
 An npm package that makes getting bracket and qualifier stage stats for osu! standard tournaments much easier. Intended for use in websites made for these tournaments.
 
 ### Features
-- Supports solo and team tournaments of any team size
-- Bracket stage stats
+- Supports solo and team tournaments of any team size.
+- Bracket stage stats.
 - Qualifier stage stats sorted by: 
-  - Rank: Sum of every rank on each beatmap, sorted from lowest to highest
-  - Relative Rank: Divides the score between the highest score on each beatmap, then sums all values, sorted from highest to lowest
-  - Z-Sum: Calculates the value of the standard normal cumulative distribution for the z-score of the score on each beatmap, then sums all values, sorted from highest to lowest
+  - Rank: Sum of every rank on each beatmap, sorted from lowest to highest.
+  - Relative Rank: Divides the score between the highest score on each beatmap, then sums all values, sorted from highest to lowest.
+  - Z-Sum: Calculates the value of the standard normal cumulative distribution for the z-score of the score on each beatmap, then sums all values, sorted from highest to lowest.
 
 ### Installation
 
@@ -107,7 +107,7 @@ let soloBracketStats = soloStats.getBracketStats();
 let teamBracketStats = teamStats.getBracketStats();
 ```
 
-SoloStats returns:
+SoloStats returns an array of objects containing the beatmap ID and an array of player scores for that map.
 
 ```js
 [{
@@ -128,7 +128,7 @@ SoloStats returns:
 }, ...]
 ```
 
-TeamStats returns:
+TeamStats returns an array of objects containing the beatmap ID, an array of player scores and an array of team scores for that map.
 
 ```js
 [{
@@ -146,7 +146,7 @@ TeamStats returns:
     misses: 0,
     team: 'käsi',
     placement: 1
-  }, { ... }, ...],
+  }, ...],
   teamScores: [{
     beatmapId: '1974409',
     team: 'käsi',
@@ -168,7 +168,9 @@ let soloQualifierStats = soloStats.getQualifierStats(calculationMethod);
 let teamQualifierStats = teamStats.getQualifierStats(calculationMethod);
 ```
 
-SoloStats returns:
+SoloStats returns an object containg two arrays:
+  - scores: An array of objects containing the beatmap ID and an array of players scores for that map.
+  - results: An array containing the qualifier results.
 
 ```js
 {
@@ -200,7 +202,9 @@ SoloStats returns:
 }
 ```
 
-TeamStats returns:
+TeamStats returns an object containg two arrays:
+  - scores: An array of objects containing the beatmap ID, an array of player scores and an array of team scores for that map.
+  - results: An array containing the qualifier results.
 
 ```js
 {

@@ -31,7 +31,7 @@ export default class TeamStats extends Stats {
 
   /**
    * Returns an object containg two arrays:
-   * - scores: An array of objects containing the beatmapID, an array of players scores and an array of team scores for that map
+   * - scores: An array of objects containing the beatmap ID, an array of player scores and an array of team scores for that map
    * - results: An array containing the qualifier results
    * @param calculationMethod Calculation method to apply to the results
    */
